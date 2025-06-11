@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04074A712DF8B59F0037664F /* ImageLoadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A682DF8B59F0037664F /* ImageLoadViewModel.swift */; };
+		04074A722DF8B59F0037664F /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A6B2DF8B59F0037664F /* MainMenu.swift */; };
+		04074A732DF8B59F0037664F /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A6E2DF8B59F0037664F /* SampleData.swift */; };
+		04074A742DF8B59F0037664F /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A6C2DF8B59F0037664F /* NetworkMonitor.swift */; };
+		04074A752DF8B59F0037664F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A672DF8B59F0037664F /* ContentView.swift */; };
+		04074A762DF8B59F0037664F /* LoadableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A692DF8B59F0037664F /* LoadableImageView.swift */; };
+		04074A772DF8B59F0037664F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A662DF8B59F0037664F /* Color+Extension.swift */; };
+		04074A782DF8B59F0037664F /* RemoteIamgeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A6D2DF8B59F0037664F /* RemoteIamgeDemoApp.swift */; };
+		04074A792DF8B59F0037664F /* WaterfallImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A6F2DF8B59F0037664F /* WaterfallImageView.swift */; };
+		04074A7A2DF8B59F0037664F /* LottieActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04074A6A2DF8B59F0037664F /* LottieActionButton.swift */; };
+		04074A7B2DF8B59F0037664F /* cache.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 04074A612DF8B59F0037664F /* cache.lottie */; };
+		04074A7C2DF8B59F0037664F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04074A652DF8B59F0037664F /* Assets.xcassets */; };
+		04074A7D2DF8B59F0037664F /* loading.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 04074A632DF8B59F0037664F /* loading.lottie */; };
+		04074A7E2DF8B59F0037664F /* iceCream.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 04074A622DF8B59F0037664F /* iceCream.lottie */; };
+		04074A812DF8B5C30037664F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 04074A802DF8B5C30037664F /* Lottie */; };
+		04074A902DF956E40037664F /* RemoteImage in Frameworks */ = {isa = PBXBuildFile; productRef = 04074A8F2DF956E40037664F /* RemoteImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04074A532DF8B5640037664F /* RemoteImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04074A612DF8B59F0037664F /* cache.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = cache.lottie; sourceTree = "<group>"; };
+		04074A622DF8B59F0037664F /* iceCream.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = iceCream.lottie; sourceTree = "<group>"; };
+		04074A632DF8B59F0037664F /* loading.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = loading.lottie; sourceTree = "<group>"; };
+		04074A652DF8B59F0037664F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04074A662DF8B59F0037664F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		04074A672DF8B59F0037664F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04074A682DF8B59F0037664F /* ImageLoadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadViewModel.swift; sourceTree = "<group>"; };
+		04074A692DF8B59F0037664F /* LoadableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableImageView.swift; sourceTree = "<group>"; };
+		04074A6A2DF8B59F0037664F /* LottieActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieActionButton.swift; sourceTree = "<group>"; };
+		04074A6B2DF8B59F0037664F /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		04074A6C2DF8B59F0037664F /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		04074A6D2DF8B59F0037664F /* RemoteIamgeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteIamgeDemoApp.swift; sourceTree = "<group>"; };
+		04074A6E2DF8B59F0037664F /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		04074A6F2DF8B59F0037664F /* WaterfallImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04074A502DF8B5640037664F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04074A902DF956E40037664F /* RemoteImage in Frameworks */,
+				04074A812DF8B5C30037664F /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04074A4A2DF8B5640037664F = {
+			isa = PBXGroup;
+			children = (
+				04074A702DF8B59F0037664F /* RemoteIamgeDemo */,
+				04074A542DF8B5640037664F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04074A542DF8B5640037664F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04074A532DF8B5640037664F /* RemoteImageDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04074A642DF8B59F0037664F /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				04074A612DF8B59F0037664F /* cache.lottie */,
+				04074A622DF8B59F0037664F /* iceCream.lottie */,
+				04074A632DF8B59F0037664F /* loading.lottie */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		04074A702DF8B59F0037664F /* RemoteIamgeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04074A642DF8B59F0037664F /* Lottie */,
+				04074A652DF8B59F0037664F /* Assets.xcassets */,
+				04074A662DF8B59F0037664F /* Color+Extension.swift */,
+				04074A672DF8B59F0037664F /* ContentView.swift */,
+				04074A682DF8B59F0037664F /* ImageLoadViewModel.swift */,
+				04074A692DF8B59F0037664F /* LoadableImageView.swift */,
+				04074A6A2DF8B59F0037664F /* LottieActionButton.swift */,
+				04074A6B2DF8B59F0037664F /* MainMenu.swift */,
+				04074A6C2DF8B59F0037664F /* NetworkMonitor.swift */,
+				04074A6D2DF8B59F0037664F /* RemoteIamgeDemoApp.swift */,
+				04074A6E2DF8B59F0037664F /* SampleData.swift */,
+				04074A6F2DF8B59F0037664F /* WaterfallImageView.swift */,
+			);
+			path = RemoteIamgeDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04074A522DF8B5640037664F /* RemoteImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04074A5E2DF8B5650037664F /* Build configuration list for PBXNativeTarget "RemoteImageDemo" */;
+			buildPhases = (
+				04074A4F2DF8B5640037664F /* Sources */,
+				04074A502DF8B5640037664F /* Frameworks */,
+				04074A512DF8B5640037664F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteImageDemo;
+			packageProductDependencies = (
+				04074A802DF8B5C30037664F /* Lottie */,
+				04074A8F2DF956E40037664F /* RemoteImage */,
+			);
+			productName = RemoteImageDemo;
+			productReference = 04074A532DF8B5640037664F /* RemoteImageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04074A4B2DF8B5640037664F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					04074A522DF8B5640037664F = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 04074A4E2DF8B5640037664F /* Build configuration list for PBXProject "RemoteImageDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04074A4A2DF8B5640037664F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				04074A7F2DF8B5C30037664F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				04074A8E2DF956E40037664F /* XCRemoteSwiftPackageReference "RemoteImage" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 04074A542DF8B5640037664F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04074A522DF8B5640037664F /* RemoteImageDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04074A512DF8B5640037664F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04074A7B2DF8B59F0037664F /* cache.lottie in Resources */,
+				04074A7C2DF8B59F0037664F /* Assets.xcassets in Resources */,
+				04074A7D2DF8B59F0037664F /* loading.lottie in Resources */,
+				04074A7E2DF8B59F0037664F /* iceCream.lottie in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04074A4F2DF8B5640037664F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04074A712DF8B59F0037664F /* ImageLoadViewModel.swift in Sources */,
+				04074A722DF8B59F0037664F /* MainMenu.swift in Sources */,
+				04074A732DF8B59F0037664F /* SampleData.swift in Sources */,
+				04074A742DF8B59F0037664F /* NetworkMonitor.swift in Sources */,
+				04074A752DF8B59F0037664F /* ContentView.swift in Sources */,
+				04074A762DF8B59F0037664F /* LoadableImageView.swift in Sources */,
+				04074A772DF8B59F0037664F /* Color+Extension.swift in Sources */,
+				04074A782DF8B59F0037664F /* RemoteIamgeDemoApp.swift in Sources */,
+				04074A792DF8B59F0037664F /* WaterfallImageView.swift in Sources */,
+				04074A7A2DF8B59F0037664F /* LottieActionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04074A5C2DF8B5650037664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04074A5D2DF8B5650037664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04074A5F2DF8B5650037664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7MJTTLBM2G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RemoteImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04074A602DF8B5650037664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7MJTTLBM2G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RemoteImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04074A4E2DF8B5640037664F /* Build configuration list for PBXProject "RemoteImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04074A5C2DF8B5650037664F /* Debug */,
+				04074A5D2DF8B5650037664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04074A5E2DF8B5650037664F /* Build configuration list for PBXNativeTarget "RemoteImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04074A5F2DF8B5650037664F /* Debug */,
+				04074A602DF8B5650037664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04074A7F2DF8B5C30037664F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		04074A8E2DF956E40037664F /* XCRemoteSwiftPackageReference "RemoteImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AbrorbekSh/RemoteImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04074A802DF8B5C30037664F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04074A7F2DF8B5C30037664F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		04074A8F2DF956E40037664F /* RemoteImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04074A8E2DF956E40037664F /* XCRemoteSwiftPackageReference "RemoteImage" */;
+			productName = RemoteImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 04074A4B2DF8B5640037664F /* Project object */;
+}
