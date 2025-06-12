@@ -1,12 +1,18 @@
 import SwiftUI
 import Lottie
 
+// MARK: - LottieActionButton
+
 struct LottieActionButton: View {
+    // MARK: Properties
+
     let name: String
     let size: CGFloat
     let action: () -> Void
     
     @State private var isPressed = false
+
+    // MARK: Body
 
     var body: some View {
         Button(action: action) {

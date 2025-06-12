@@ -85,20 +85,76 @@
 		04074A702DF8B59F0037664F /* RemoteIamgeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				04074A642DF8B59F0037664F /* Lottie */,
-				04074A652DF8B59F0037664F /* Assets.xcassets */,
-				04074A662DF8B59F0037664F /* Color+Extension.swift */,
-				04074A672DF8B59F0037664F /* ContentView.swift */,
-				04074A682DF8B59F0037664F /* ImageLoadViewModel.swift */,
-				04074A692DF8B59F0037664F /* LoadableImageView.swift */,
-				04074A6A2DF8B59F0037664F /* LottieActionButton.swift */,
-				04074A6B2DF8B59F0037664F /* MainMenu.swift */,
-				04074A6C2DF8B59F0037664F /* NetworkMonitor.swift */,
-				04074A6D2DF8B59F0037664F /* RemoteIamgeDemoApp.swift */,
-				04074A6E2DF8B59F0037664F /* SampleData.swift */,
-				04074A6F2DF8B59F0037664F /* WaterfallImageView.swift */,
+				04074A992DFADE3B0037664F /* Shared */,
+				04074A942DFADB430037664F /* Features */,
+				04074A932DFADB380037664F /* App */,
 			);
 			path = RemoteIamgeDemo;
+			sourceTree = "<group>";
+		};
+		04074A932DFADB380037664F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04074A6D2DF8B59F0037664F /* RemoteIamgeDemoApp.swift */,
+				04074A672DF8B59F0037664F /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04074A942DFADB430037664F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				04074A982DFADC670037664F /* LoadingView */,
+				04074A972DFADB850037664F /* LottieControls */,
+				04074A962DFADB730037664F /* MainMenu */,
+				04074A952DFADB5A0037664F /* WaterfallView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		04074A952DFADB5A0037664F /* WaterfallView */ = {
+			isa = PBXGroup;
+			children = (
+				04074A6F2DF8B59F0037664F /* WaterfallImageView.swift */,
+			);
+			path = WaterfallView;
+			sourceTree = "<group>";
+		};
+		04074A962DFADB730037664F /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				04074A6B2DF8B59F0037664F /* MainMenu.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		04074A972DFADB850037664F /* LottieControls */ = {
+			isa = PBXGroup;
+			children = (
+				04074A6A2DF8B59F0037664F /* LottieActionButton.swift */,
+			);
+			path = LottieControls;
+			sourceTree = "<group>";
+		};
+		04074A982DFADC670037664F /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				04074A682DF8B59F0037664F /* ImageLoadViewModel.swift */,
+				04074A692DF8B59F0037664F /* LoadableImageView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		04074A992DFADE3B0037664F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				04074A652DF8B59F0037664F /* Assets.xcassets */,
+				04074A662DF8B59F0037664F /* Color+Extension.swift */,
+				04074A6C2DF8B59F0037664F /* NetworkMonitor.swift */,
+				04074A6E2DF8B59F0037664F /* SampleData.swift */,
+				04074A642DF8B59F0037664F /* Lottie */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

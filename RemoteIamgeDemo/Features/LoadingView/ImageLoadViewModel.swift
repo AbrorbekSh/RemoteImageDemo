@@ -2,8 +2,22 @@ import Foundation
 import Combine
 
 final class ImageLoadViewModel: ObservableObject {
-    enum LoadState {
+    enum LoadState: Equatable {
         case idle, loading, success, failure(Error), cancelled
+        
+        static func == (lhs: LoadState, rhs: LoadState) -> Bool {
+            switch (lhs, rhs) {
+            case (.idle, .idle),
+                 (.loading, .loading),
+                 (.success, .success),
+                 (.cancelled, .cancelled):
+                return true
+            case let (.failure(lhsError), .failure(rhsError)):
+                return lhsError.localizedDescription == rhsError.localizedDescription
+            default:
+                return false
+            }
+        }
     }
 
     @Published var progress: Double = 0.0
@@ -16,6 +30,14 @@ final class ImageLoadViewModel: ObservableObject {
     init(url: URL) {
         self.url = url
     }
+    
+    func load() {
+        guard state != .loading else { return }
+        state = .loading
+        cancelLoading = false
+        progress = 0
+        reloadToken = UUID()
+    }
 
     func retry() {
         state = .loading
@@ -25,6 +47,7 @@ final class ImageLoadViewModel: ObservableObject {
     }
 
     func cancel() {
+        guard state == .loading else { return }
         state = .cancelled
         cancelLoading = true
         progress = 0
@@ -36,6 +59,10 @@ final class ImageLoadViewModel: ObservableObject {
                 self.progress = value
             }
         }
+    }
+    
+    func updateState(_ state: LoadState) {
+        self.state = state
     }
 
     func setError(_ error: Error) {

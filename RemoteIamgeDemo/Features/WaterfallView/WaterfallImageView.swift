@@ -1,10 +1,16 @@
 import SwiftUI
 import RemoteImage
 
+// MARK: - WaterfallImageView
+
 struct WaterfallImageView: View {
+    // MARK: Properties
+
     @StateObject private var networkMonitor = NetworkMonitor()
     let imageURLs: [URL]
     let columnCount: Int
+
+    // MARK: Computed
 
     private var columnedURLs: [[String]] {
         guard columnCount > 0 else { return [] }
@@ -14,6 +20,8 @@ struct WaterfallImageView: View {
         }
         return columns
     }
+
+    // MARK: Body
 
     var body: some View {
         Group {
@@ -35,8 +43,14 @@ struct WaterfallImageView: View {
     }
 }
 
+// MARK: - ImageColumnView
+
 struct ImageColumnView: View {
+    // MARK: Properties
+
     let urls: [String]
+
+    // MARK: Body
 
     var body: some View {
         LazyVStack(spacing: 8) {
@@ -62,7 +76,11 @@ struct ImageColumnView: View {
     }
 }
 
+// MARK: - NoConnectionView
+
 struct NoConnectionView: View {
+    // MARK: Body
+
     var body: some View {
         VStack(spacing: 16) {
             Image(systemName: "wifi.slash")

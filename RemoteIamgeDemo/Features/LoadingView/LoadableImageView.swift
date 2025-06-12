@@ -1,6 +1,8 @@
 import SwiftUI
 import RemoteImage
 
+// MARK: - LoadableImageView
+
 struct LoadableImageView: View {
     @StateObject private var viewModel = ImageLoadViewModel(url: SampleData.catImage30MB)
 
@@ -10,11 +12,14 @@ struct LoadableImageView: View {
                 .id(viewModel.reloadToken)
 
             ActionButtons(viewModel: viewModel)
-            
+
             GradientButton(label: "Clear Cache",
                            systemImage: "trash",
                            gradient: .init(colors: [.blue, .purple])) {
-                Task { try? await TieredImageCache.shared.clearCache() }
+                Task {
+                    URLCache.shared.removeAllCachedResponses()
+                    try? await TieredImageCache.shared.clearCache()
+                }
             }
         }
         .padding()
@@ -23,10 +28,12 @@ struct LoadableImageView: View {
         .onDisappear { viewModel.cancel() }
     }
 
+    // MARK: - Image Display
+
     @ViewBuilder
     private var imageDisplay: some View {
         RemoteImage(viewModel.url)
-            .resizable()
+            .onSuccess { _ in viewModel.updateState(.success) }
             .placeholder {
                 switch viewModel.state {
                 case .cancelled:
@@ -37,19 +44,22 @@ struct LoadableImageView: View {
             }
             .failure { error in
                 FailureView(retryAction: viewModel.retry)
-                    .onAppear {
-                        viewModel.setError(error)
-                    }
+                    .onAppear { viewModel.setError(error) }
             }
-            .cancelLoading(trigger: $viewModel.cancelLoading)
             .onProgress { progress in
                 viewModel.updateProgress(progress)
             }
+            .cancelOnDisappear(true)
+            .cancelLoading(trigger: $viewModel.cancelLoading)
+            .resizable()
+            .onAppear { viewModel.updateState(.loading) }
             .scaledToFit()
             .cornerRadius(16)
             .frame(height: 560)
     }
 }
+
+// MARK: - ActionButtons
 
 struct ActionButtons: View {
     @ObservedObject var viewModel: ImageLoadViewModel
@@ -61,11 +71,13 @@ struct ActionButtons: View {
             }
 
             GradientButton(label: "Load", systemImage: "arrow.clockwise.circle", gradient: .init(colors: [.green, .mint])) {
-                viewModel.retry()
+                viewModel.load()
             }
         }
     }
 }
+
+// MARK: - GradientButton
 
 struct GradientButton: View {
     let label: String
@@ -90,6 +102,8 @@ struct GradientButton: View {
     }
 }
 
+// MARK: - FailureView
+
 struct FailureView: View {
     let retryAction: () -> Void
 
@@ -105,6 +119,8 @@ struct FailureView: View {
         }
     }
 }
+
+// MARK: - PlaceholderView
 
 struct PlaceholderView: View {
     let icon: String
@@ -123,6 +139,8 @@ struct PlaceholderView: View {
         .padding(.bottom, 10)
     }
 }
+
+// MARK: - ProgressBarView
 
 struct ProgressBarView: View {
     @Binding var progress: Double
@@ -160,6 +178,3 @@ struct ProgressBarView: View {
 
     private let cornerRadius: CGFloat = 10
 }
-
-
-

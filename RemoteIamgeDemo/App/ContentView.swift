@@ -2,6 +2,8 @@ import SwiftUI
 import RemoteImage
 
 struct ContentView: View {
+    // MARK: - Navigation
+
     enum Route: Hashable {
         case waterfallImageView
         case loadableImageView
@@ -9,6 +11,8 @@ struct ContentView: View {
 
     @State private var path = NavigationPath()
     @State private var showClearDialog = false
+
+    // MARK: - Body
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -24,6 +28,8 @@ struct ContentView: View {
         }
     }
 
+    // MARK: - Destination View
+
     @ViewBuilder
     private func destinationView(for route: Route) -> some View {
         switch route {
@@ -33,6 +39,8 @@ struct ContentView: View {
             LoadableImageView()
         }
     }
+
+    // MARK: - Confirmation Dialog
 
     private var confirmationDialogButtons: some View {
         Group {

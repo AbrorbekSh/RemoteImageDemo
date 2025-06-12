@@ -1,8 +1,14 @@
 import SwiftUI
 
+// MARK: - MainMenu
+
 struct MainMenu: View {
+    // MARK: Properties
+
     @Binding var path: NavigationPath
     @Binding var showClearDialog: Bool
+
+    // MARK: Body
 
     var body: some View {
         VStack(spacing: 28) {
